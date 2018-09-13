@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<style>
+* {
+    box-sizing: border-box;
+    
+}
+
+header{
+background:white;
+margin-bottom: 1px;
+overflow:hidden;
+font-family: 'Georgia', Times, Times New Roman, serif;
+border-bottom:2px solid gray;
+}
+
+.logo{
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family:font-family: 'Georgia', Times, Times New Roman, serif;
+float:left;
+
+
+}
+
+nav{
+    float: right;
+    line-height: 70px:
+    color: #777777;
+}
+
+nav li{
+    text-decoration: none;
+display:inline-block;
+padding: 15px 20px;
+margin-left: 10px;
+color: #777777;
+overflow: hidden;
+margin-top:35px;
+font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+font-size: 20px;
+
+}
+a:link {
+    color: #777777;
+    }
+    a:visited {
+    color: #777777;
+    }
+    a:hover {
+    color: #4aaaa5;
+    }
+
+body {
+    margin-bottom: 50px;
+    
+    padding-bottom: 10px;
+    color: #777777;
+    background:lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('../Images/real_cf_@2X.png');
+}
+
+
+
+.container{
+   
+max-width: 960px;
+width:96%;
+margin: auto;
+margin-bottom:50px;
+
+}
+
+
+
+
+.content {
+
+    
+    margin: 30px 200px 50px 200px;
+background-color:#fff;
+border: 2px solid grey;
+padding:20px;
+
+
+}
+
+.content h2 {
+    
+    
+    
+    margin-bottom:20px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color:#4aaaa5;
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom:2px solid gray;
+}
+
+.content article{
+
+
+width:auto;
+margin: 15px 20px;
+font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+padding: 15px 20px;
+line-height: 1.6;
+
+z-index:3;
+
+    
+}
+
+/* Can uncomment 128-137 and comment 141 - 172 to see text format correctly. couldnt figure it out with absoulte positions only floats: */
+
+/* .content article{
+
+
+}
+
+.static {
+   float: left;
+    margin-right: 20px;
+    box-shadow: 5px 5px 2px rgb(180, 255, 218);
+  } */
+
+
+
+.static {
+   
+    position: absolute;
+    margin-right:20px;
+    z-index: 2;
+    box-shadow: 5px 5px 2px rgb(180, 255, 218);
+  }
+  
+  .static:hover {
+    position: absolute;
+    margin-right:20px;
+    z-index: 1;
+    box-shadow: 5px 5px 2px rgb(180, 255, 218);
+  }
+
+  .active{
+    position: relative;
+  top: 0;
+  left: 0;
+    margin-right:20px;
+      
+    z-index:1;
+    box-shadow: 5px 5px 2px rgb(180, 255, 218);
+  }
+  .active:hover{
+    position: relative;
+  top: 0;
+  left: 0;
+      margin-right:20px;
+      z-index:2;
+      box-shadow: 5px 5px 2px rgb(180, 255, 218);
+  }
+
+  
+  .footer {
+     border-top:2px solid #4aaaa5;
+     margin-top:42px; 
+     height: 30px;
+      padding-top:20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-size: 12px;
+    
+    z-index: 7;
+    
+  }
+
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+When moving the mouse over the submit button, 
+input[type=submit]:hover {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: #777777;
+}
+
+.contact form {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 40%%;
+    padding: 5px;
+    z-index: 2;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+    
+  }
+
+  .column {
+    position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    position: relative;
+    
+    
+    color: white;
+    text-align: center;
+    background-color:#4aaaa5;
+    width: 100%
+    
+    color: white;
+    z-index: 4;
+    margin: 10px;
+    
+
+</style>
+
+
+
