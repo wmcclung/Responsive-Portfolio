@@ -8,9 +8,9 @@
 
 <style>
 * {
-    box-sizing: border-box;
+    box-sizing: border-box;}
     
-}
+
 
 header{
 background:white;
@@ -268,6 +268,56 @@ input[type=submit]:hover {
     z-index: 4;
     margin: 10px;
     
+    /* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+
+/*I tried coping prebuilt media query breakpoints and adjusting to fit my CSS */
+
+
+         body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+         
+         img {outline:none; text-decoration:none;border:none; -ms-interpolation-mode: bicubic;}
+         a img {border:none;}
+         .image_fix {display:block;}
+         p {margin: 0px 0px !important;}
+         
+         a {color: #87b650;text-decoration: none;text-decoration:none!important;}
+         table[class=full] { width: 100%; clear: both; }
+         @media only screen and (max-width: 640px) {
+         a[href^="tel"], a[href^="sms"]
+         
+         .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] 
+         
+         div[class=device-width] {width: 500px!important;text-align:center!important;}
+         div[class=devicewidthinner] {width: 480px!important;text-align:center!important;}
+         img[class=banner] {width: 500px!important;height:auto!important;}
+         img[class=colimg2] {width: 500px!important;height:auto!important;}
+	     br[class=showme]{display:block!important;line-height: 135%!important;}
+		 table[class="responsive-button"] { width:98% !important; height:auto!important;padding-top:5px !important;}
+         
+         
+         @media only screen and (max-width: 480px) {
+         a[href^="tel"], a[href^="sms"] 
+        
+         div [class=device-width] {width: 400px!important;text-align:center!important;}
+         div[class=devicewidthinner] {width: 380px!important;text-align:center!important;}
+         img[class=banner] {width: 400px!important;height:auto!important;}
+		 img[class=banner2] {width: 350px!important;height:auto!important;}
+		 img[class=button] {width: 300px!important;height:auto!important;}
+		 .smaller-text1 {font-size:17px!important; line-height:140%!important;padding-left:10px!important;padding-right:10px!important;}
+	     .smaller-text2 {font-size:24px!important; line-height:140%!important;padding-left:0!important;padding-right:0!important;}
+         .headline-text {font-size:28px!important; line-height:130%!important;padding-left:0!important;padding-right:0!important;}
+         .phone {line-height: 54px!important;}
+         img[class=colimg2] {width: 400px!important;height:auto!important;}
+         br[class=showme]{display:block!important;line-height: 135%!important;}
+         td[class="padding-bottom25"]{padding-bottom:25px!important;}
+		 img[class="propImg"] {width:132px!important; margin:0!important;float:none!important;text-align:center!important;}
+         }
+        
+	
 
 </style>
 
